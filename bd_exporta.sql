@@ -66,6 +66,3 @@ update departamento set orcamento = orcamento + 2000.00 where nome = 'Vendas';
 
 -- REVERTER PARA O PONTO INTERMEDIÁRIO (DESFAZ O AUMENTO DO ORÇAMENTO DE VENDAS)
 rollback to ajuste_parcial;
-
--- CONFIRMAR A TRANSAÇÃO
-commit;
